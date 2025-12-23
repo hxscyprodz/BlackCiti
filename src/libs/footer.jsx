@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Facebook, Instagram, Twitter, Linkedin} from 'lucide-react'
+import Socials from '../components/Socials';
 
 export default function Footer() {
     return (
@@ -20,45 +20,39 @@ export default function Footer() {
                 Delivering tailored solutions with integrity and expertise
               </p>
             </div>
-            <div className="flex gap-3">
-              <Link className="bg-[#1F1F1F] p-2 rounded-2xl hover:bg-blue-800">
-                <Facebook color="#999999" />
-              </Link>
-              <Link className="bg-[#1F1F1F] p-2 rounded-2xl hover:bg-blue-800">
-                <Instagram color="#999999" />
-              </Link>
-              <Link className="bg-[#1F1F1F] p-2 rounded-2xl hover:bg-blue-800">
-                <Twitter color="#999999" />
-              </Link>
-              <Link className="bg-[#1F1F1F] p-2 rounded-2xl hover:bg-blue-800">
-                <Linkedin color="#999999" />
-              </Link>
-            </div>
+            <Socials />
+            
           </div>
           <div className="flex flex-col gap-5">
             <p className="text-gray-200 font-semibold">Company Information</p>
             <ol className="text-[#999999] text-sm flex flex-col gap-3">
-              <li className="hover:text-blue-600 cursor-pointer">About Us</li>
-              <li className="hover:text-blue-600 cursor-pointer">Our Team</li>
-              <li className="hover:text-blue-600 cursor-pointer">
+              <li className="hover:text-blue-600 cursor-pointer w-fit">
+                About Us
+              </li>
+              <li className="hover:text-blue-600 cursor-pointer w-fit">
+                Our Team
+              </li>
+              <li className="hover:text-blue-600 cursor-pointer w-fit">
                 Mission Statement
               </li>
-              <li className="hover:text-blue-600 cursor-pointer">Contact Us</li>
+              <li className="hover:text-blue-600 cursor-pointer w-fit">
+                Contact Us
+              </li>
             </ol>
           </div>
           <div className="flex flex-col gap-5">
             <p className="text-gray-200 font-semibold">Investment Products</p>
             <ol className="text-[#999999] text-sm flex flex-col gap-3">
-              <li className="hover:text-blue-600 cursor-pointer">
+              <li className="hover:text-blue-600 cursor-pointer w-fit">
                 Asset Management
               </li>
-              <li className="hover:text-blue-600 cursor-pointer">
+              <li className="hover:text-blue-600 cursor-pointer w-fit">
                 Wealth Management
               </li>
-              <li className="hover:text-blue-600 cursor-pointer">
+              <li className="hover:text-blue-600 cursor-pointer w-fit">
                 Investment Research
               </li>
-              <li className="hover:text-blue-600 cursor-pointer">
+              <li className="hover:text-blue-600 cursor-pointer w-fit">
                 Portfolio Management
               </li>
             </ol>
@@ -68,22 +62,28 @@ export default function Footer() {
               Regulatory Information
             </p>
             <ol className="text-[#999999] text-sm flex flex-col gap-3">
-              <li className="hover:text-blue-600 cursor-pointer">
+              <li className="hover:text-blue-600 cursor-pointer w-fit">
                 Disclosures
               </li>
-              <li className="hover:text-blue-600 cursor-pointer">
+              <li className="hover:text-blue-600 cursor-pointer w-fit">
                 Privacy Policy
               </li>
-              <li className="hover:text-blue-600 cursor-pointer">
+              <li className="hover:text-blue-600 cursor-pointer w-fit">
                 Terms of Use
               </li>
-              <li className="hover:text-blue-600 cursor-pointer">Compliance</li>
+              <li className="hover:text-blue-600 cursor-pointer w-fit">
+                Compliance
+              </li>
             </ol>
           </div>
         </div>
-        <div className='flex justify-between'>
-          <p className="text-[#999999] text-sm"> {new Date().getFullYear()} BlackCiti Inv. All rights reserved</p>
-          <p className='text-[#999999] text-sm'>Invest growth, secure your future, and watch your wealth flourish</p>
+        <div className="flex justify-between">
+          <p className="text-[#999999] text-sm">
+            {new Date().getFullYear()} BlackCiti Inv. All rights reserved
+          </p>
+          <p className="text-[#999999] text-sm">
+            Invest growth, secure your future, and watch your wealth flourish
+          </p>
         </div>
       </div>
     );

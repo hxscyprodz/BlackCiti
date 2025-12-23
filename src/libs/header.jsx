@@ -1,4 +1,5 @@
-import { Link } from "react-scroll";
+import { Link as RouterLink } from 'react-router-dom'
+import { Link as ScrollLink } from "react-scroll"
 
 export default function Header() {
   return (
@@ -6,25 +7,48 @@ export default function Header() {
       className="flex items-center justify-between fixed top-0 bg-black 
         left-0 right-0 h-20 px-20 z-50"
     >
-      <div>
-        <h1 className="text-3xl font-bold text-gray-200">Black<span className="text-blue-800 font-medium">Citi</span> </h1>
-        <p className="text-gray-200 italic text-xs">
+      <div className="flex flex-col items-center justify-center">
+        <img src="/blackciti.svg" alt="" />
+
+        <p className="text-gray-200 italic text-[10px]">
           Best investment solutions
         </p>
       </div>
       <nav className="flex gap-7 text-gray-200">
-        <Link to="Home" smooth={true} duration={500} 
-          className="cursor-pointer">
-          Home</Link>
-        <Link to="About" smooth={true} duration={500} 
-          className="cursor-pointer">
+        <ScrollLink
+          to="Home"
+          smooth={true}
+          duration={500}
+          className="cursor-pointer"
+        >
+          Home
+        </ScrollLink>
+        <ScrollLink
+          to="About"
+          smooth={true}
+          duration={500}
+          className="cursor-pointer"
+        >
           About
-        </Link>
-        <Link to="Teams" smooth={true} duration={500} 
-          className="cursor-pointer">
-          Teams</Link>
-        <Link to="#">Services</Link>
-        <Link to="#">Contact</Link>
+        </ScrollLink>
+        <ScrollLink
+          to="Teams"
+          smooth={true}
+          duration={500}
+          className="cursor-pointer"
+        >
+          Teams
+        </ScrollLink>
+        <RouterLink to="/services">Services</RouterLink>
+        <ScrollLink
+          to="FAQS"
+          smooth={true}
+          duration={500}
+          className="cursor-pointer"
+        >
+          FAQS
+        </ScrollLink>
+        <RouterLink to="#">Contact</RouterLink>
       </nav>
     </header>
   );

@@ -1,9 +1,10 @@
 import { Element } from "react-scroll";
-import TeamCard from "../ui/cards/team-card";
+import TeamCard from "../ui/cards/TeamsCard";
 
 export default function Teams() {
     return(
-        <Element name="Teams" className="flex flex-col items-center justify-center gap-10 mt-20">
+        <Element name="Teams" className="flex flex-col items-center justify-center gap-10 mt-10
+            bg-blue-100 p-5">
             <div className="flex flex-col gap-5">
                 <h1 className="text-center text-4xl font-bold">Meet the Team</h1>
                 <p>

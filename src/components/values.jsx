@@ -1,11 +1,11 @@
 import { Lightbulb, Shield, UserCheck, Award } from "lucide-react";
-import ValuesCard from "../ui/cards/values-card";
+import ValuesCard from "../ui/cards/ValuesCard";
 
 export default function Values() {
     return (
       <div>
         <div className="flex flex-col justify-center items-center gap-5">
-          <h1 className="text-4xl font-bold">Our Core Value</h1>
+          <h1 className="text-4xl font-semibold">Our Core Value</h1>
           <p className="text-base">
             These principles guide everything we do at BlackCiti, from product
             decisions to wealth creation.

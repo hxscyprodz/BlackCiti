@@ -1,7 +1,7 @@
-import Header from "../libs/header";
+import Header from "./header";
 import Footer from "./footer";
 
-export default function Layout({ children }) {
+export default function MainLayout({ children }) {
   return (
     <div>
       <Header />
