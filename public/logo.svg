@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126.88 64.05">
+<svg id="b" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.22 22.32">
   <defs>
     <style>
-      .b {
-        fill: none;
-        stroke: #fff;
-        stroke-miterlimit: 10;
+      .d {
+        stroke-width: 0px;
       }
 
-      .c {
+      .d, .e {
         fill: #fff;
+      }
+
+      .e {
         font-family: VladimirScript, 'Vladimir Script';
-        font-size: 18.17px;
+        font-size: 15.63px;
       }
     </style>
   </defs>
-  <g>
-    <text class="c" transform="translate(59.88 58.38) scale(.86 1)"><tspan x="0" y="0">Citi</tspan></text>
-    <text class="c" transform="translate(25.75 57.91) scale(.86 1)"><tspan x="0" y="0">Black</tspan></text>
+  <g id="c" data-name="Layer 1">
+    <g>
+      <text class="e" transform="translate(35.35 17.45) scale(1.04 1)"><tspan x="0" y="0">Citi</tspan></text>
+      <text class="e" transform="translate(0 17.04) scale(1.04 1)"><tspan x="0" y="0">Black</tspan></text>
+      <path class="d" d="M3.87,6.35c.12.22,11.17-5.16,26.76-5.24,16.59-.08,28.36,5.88,28.5,5.66C59.27,6.54,47.13-.07,30.79,0,15.27.07,3.74,6.13,3.87,6.35Z"/>
+    </g>
   </g>
-  <polyline class="b" points="27.51 42.49 42.94 27.68 54.64 42.49 54.64 31.69 64.49 32 64.49 42.49 82.18 42.49"/>
 </svg>

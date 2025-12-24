@@ -7,9 +7,8 @@ export default function Footer() {
         <div className="grid sm:grid-cols-1 lg:grid-cols-4 space-y-10 space-x-10">
           <div className="flex flex-col gap-5">
             <div>
-              <h1 className="text-3xl font-bold text-gray-200">
-                Black<span className="text-blue-800 font-medium">Citi</span>{" "}
-              </h1>
+              <img className='w-30'
+                src="/logo.svg" alt="blackciti logo" />
               <p className="text-gray-200 italic text-xs">
                 Best investment solutions
               </p>

@@ -9,7 +9,7 @@ export default function Header() {
         left-0 right-0 h-20 px-5 z-50"
     >
       <div className="flex flex-col items-center justify-center">
-        <img src="/blackciti.svg" alt="" />
+        <img src="/logo.svg" alt="" />
 
         <p className="text-gray-200 italic text-[10px]">
           Best investment solutions
