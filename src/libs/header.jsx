@@ -8,13 +8,14 @@ export default function Header() {
       className="flex items-center justify-between fixed top-0 bg-black 
         left-0 right-0 h-20 px-5 z-50"
     >
-      <div className="flex flex-col items-center justify-center">
+      <ScrollLink to='Home' smooth={true} duration={500}
+        className="flex flex-col items-center justify-center cursor-pointer">
         <img src="/logo.svg" alt="" />
 
         <p className="text-gray-200 italic text-[10px]">
           Best investment solutions
         </p>
-      </div>
+      </ScrollLink>
       <div className='lg:hidden'>
         <Menu color='white' />
       </div>
