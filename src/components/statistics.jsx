@@ -2,7 +2,7 @@
 export default function Stats() {
     
     return (
-      <div className="flex gap-10">
+      <div className="flex gap-10 sm:justify-center lg:justify-start">
         <div className="text-center text-gray-300">
           <h1 className="text-4xl font-bold">5</h1>
           <h1 className="font-semibold">Years of Experience</h1>

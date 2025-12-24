@@ -3,7 +3,7 @@ export default function ButtonHover(props) {
     <button
       className="rounded-sm h-11 px-2 text-gray-900 hover:drop-shadow-2xl
       hover:transform hover:-translate-y-0.5 hover:shadow-gray-900 cursor-pointer
-      hover:bg-blue-200 transition-all bg-gray-200"
+      hover:bg-blue-200 transition-all bg-gray-200 w-full md:w-50"
     >
       <p>{props.text}</p>
     </button>

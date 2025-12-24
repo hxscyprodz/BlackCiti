@@ -45,14 +45,14 @@ export default function FAQCards() {
     return (
       <div
         className="w-3/4 flex flex-col items-center p-3 transform hover:-translate-y-2 
-            transition-all duration-700 gap-2 cursor-pointer"
+            transition-all duration-700 gap-2 cursor-pointer justify-self-center"
             onClick={() => toggleFAQ(faq.id)}
       >
         <div
           className="flex items-center justify-around w-full bg-blue-200 
-            h-18 rounded-md"
+            min-h-18 rounded-md"
         >
-          <p className="text-2xl text-blue-600 w-3/4">{faq.question}</p>
+          <p className="sm:text-base md:text-2xl text-blue-600 w-3/4">{faq.question}</p>
           <button className="cursor-pointer" onClick={() => toggleFAQ(faq.id)}>
             {openIndex === faq.id ? (
               <ChevronUp color="#155dfc" className="h-6 w-6 text-primary" />
@@ -73,7 +73,7 @@ export default function FAQCards() {
   });
 
   return (
-    <div className="px-20 py-10 w-full flex flex-col items-center">
+    <div className="py-10 w-full grid grid-cols-1 items-center justify-center">
       {cards}
     </div>
   );

@@ -14,7 +14,7 @@ export default function Header() {
           Best investment solutions
         </p>
       </div>
-      <nav className="flex gap-7 text-gray-200">
+      <nav className="hidden sm:hidden lg:flex gap-7 text-gray-200 ">
         <ScrollLink
           to="Home"
           smooth={true}

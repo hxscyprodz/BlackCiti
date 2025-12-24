@@ -49,13 +49,13 @@ export default function ServicesCards() {
     const cards = services.map( card => {
         return (
           <div key={card.id}
-            className="border border-blue-200 rounded-md w-120 flex flex-col 
+            className="border border-blue-200 rounded-md max-w-120 flex flex-col 
             gap-3 p-5 h-120 hover:scale-105 transition-all duration-1000 cursor-pointer
-            hover:shadow-blue-800 hover:shadow-2xl">
+            hover:shadow-blue-800 hover:shadow-2xl justify-self-center">
             <div className="bg-gradient-to-r from-blue-400 to-blue-900 w-full h-60
                 rounded-sm"></div>
             <div>
-              <h3 className="text-2xl overflow-ellipsis whitespace-nowrap truncate">
+              <h3 className="text-2xl overflow-ellipsis text-wrap truncate">
                 {card.name}
               </h3>
               <p>{card.title}</p>
@@ -67,7 +67,7 @@ export default function ServicesCards() {
         );
     })
     return (
-      <div className="grid grid-cols-3 gap-10 items-center justify-center my-10">
+      <div className="grid sm:grid-cols-2  2xl:grid-cols-3 gap-10 items-center justify-center my-10">
         {cards}
       </div>
     );

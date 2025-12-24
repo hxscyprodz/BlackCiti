@@ -4,7 +4,7 @@ import Socials from '../components/Socials';
 export default function Footer() {
     return (
       <div className="bg-black p-20 flex flex-col gap-20">
-        <div className="grid grid-cols-4">
+        <div className="grid sm:grid-cols-1 lg:grid-cols-4 space-y-10 space-x-10">
           <div className="flex flex-col gap-5">
             <div>
               <h1 className="text-3xl font-bold text-gray-200">
@@ -21,7 +21,6 @@ export default function Footer() {
               </p>
             </div>
             <Socials />
-            
           </div>
           <div className="flex flex-col gap-5">
             <p className="text-gray-200 font-semibold">Company Information</p>
@@ -77,11 +76,12 @@ export default function Footer() {
             </ol>
           </div>
         </div>
-        <div className="flex justify-between">
-          <p className="text-[#999999] text-sm">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-5 justify-between 
+          items-center">
+          <p className="text-[#999999] text-sm text-center sm:text-center md:text-left m-0">
             {new Date().getFullYear()} BlackCiti Inv. All rights reserved
           </p>
-          <p className="text-[#999999] text-sm">
+          <p className="text-[#999999] text-sm text-center">
             Invest growth, secure your future, and watch your wealth flourish
           </p>
         </div>
